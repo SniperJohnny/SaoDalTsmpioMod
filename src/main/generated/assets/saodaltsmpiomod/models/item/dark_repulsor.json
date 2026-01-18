@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "saodaltsmpiomod:item/dark_repulsor"
+  }
+}

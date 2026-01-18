@@ -1,0 +1,29 @@
+package net.sniperjohnny.saodaltsmpiomod.datagen;
+
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.model.ModelTemplates;
+import net.sniperjohnny.saodaltsmpiomod.modItems.ModItems;
+import net.sniperjohnny.saodaltsmpiomod.modItems.ModTools;
+import net.sniperjohnny.saodaltsmpiomod.modItems.ModWeapons;
+
+public class ModModelProvider extends FabricModelProvider {
+    public ModModelProvider(FabricDataOutput output) {
+        super(output);
+    }
+
+    @Override
+    public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+
+    }
+
+    @Override
+    public void generateItemModels(ItemModelGenerators itemModelGenerators) {
+    itemModelGenerators.generateFlatItem(ModItems.CRYSTALLITE_ORE, ModelTemplates.FLAT_ITEM);
+    itemModelGenerators.generateFlatItem(ModItems.RABBIT_RAGOUT, ModelTemplates.FLAT_ITEM);
+    itemModelGenerators.generateFlatItem(ModTools.CRYSTALLITE_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+    itemModelGenerators.generateFlatItem(ModWeapons.DARK_REPULSOR, ModelTemplates.FLAT_HANDHELD_ITEM);
+    }
+}
