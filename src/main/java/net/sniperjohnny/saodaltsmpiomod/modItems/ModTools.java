@@ -24,9 +24,11 @@ public class ModTools {
     }
     public static final Item CRYSTALLITE_PICKAXE = register("crystallite_pickaxe",
             Item::new,
-            new Item.Properties().pickaxe(ModMaterials.CRYSTALLIE_TOOL_MATERIAL, 10f, 10f));
+            new Item.Properties().pickaxe(ModMaterials.CRYSTALLIE_TOOL_MATERIAL, 4f, -2.4f));
 
-
+    public static final Item CRYSTALLITE_AXE = register("crystallite_axe",
+            Item::new,
+            new Item.Properties().axe(ModMaterials.CRYSTALLIE_TOOL_MATERIAL, 10f, -2.8f));
     public static void initialize() {
 
     }

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "saodaltsmpiomod:black_leather"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "saodaltsmpiomod:black_leather"
+      }
+    ]
+  }
+}

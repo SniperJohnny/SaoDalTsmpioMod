@@ -11,7 +11,7 @@ import net.sniperjohnny.saodaltsmpiomod.Saodaltsmpiomod;
 public class ModMaterials {
     public static final TagKey<Item> REPAIRS_CRYSTALLITE_ARMOR = TagKey.create(BuiltInRegistries.ITEM.key(), Identifier.fromNamespaceAndPath(Saodaltsmpiomod.MOD_ID, "repairs_crystallite_armor"));
     public static final ToolMaterial CRYSTALLIE_TOOL_MATERIAL = new ToolMaterial(
-            BlockTags.INCORRECT_FOR_WOODEN_TOOL,
+            BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
             7555555,
             10.0f,
             1.5f,
