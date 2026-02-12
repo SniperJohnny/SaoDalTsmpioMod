@@ -40,6 +40,9 @@ public class ModItems {
     public static final Item RABBIT_RAGOUT = register("rabbit_ragout", Item::new, new Item.Properties()
             .food(RABBIT_RAGOUT_COMPONENT, RABBIT_RAGOUT_CONSUMABLE_COMPONENT));
     public static final Item CRYSTALLITE_ORE = register("crystallite_ore", Item::new, new Item.Properties());
+    public static final Item REINFORCED_LEATHER_STICK = register("reinforced_leather_stick", Item::new, new Item.Properties());
+    public static final Item METALL = register("metall", Item::new, new Item.Properties());
+    public static final Item METALL_SCRAP = register("metall_scrap", Item::new, new Item.Properties());
     public static void initialize() {
 
         }

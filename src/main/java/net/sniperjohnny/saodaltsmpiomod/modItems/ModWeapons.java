@@ -22,11 +22,16 @@ public class ModWeapons {  public static <GenericItem extends Item> GenericItem 
     return item;
 }
 
-public static final Item DARK_REPULSOR = register(
+    public static final Item DARK_REPULSOR = register(
         "dark_repulsor",
         Item::new,
-        new Item.Properties().sword(ModMaterials.CRYSTALLIE_TOOL_MATERIAL, 10f, -2.4f)
-);
+        new Item.Properties().sword(ModMaterials.CRYSTALLIE_TOOL_MATERIAL, 10f, -2.3f)
+    );
+    public static final Item ELUCIDATOR = register(
+            "elucidator",
+            Item::new,
+            new Item.Properties().sword(ModMaterials.BLACK_METALL_TOOL_MATERIAL, 11, -2.3f)
+    );
 
 public static void initialize() {
 

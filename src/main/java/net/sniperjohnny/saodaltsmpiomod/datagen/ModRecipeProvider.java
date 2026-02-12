@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.sniperjohnny.saodaltsmpiomod.modItems.ModItems;
 import net.sniperjohnny.saodaltsmpiomod.modItems.ModTools;
+import net.sniperjohnny.saodaltsmpiomod.modblocks.ModBlocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -44,14 +45,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("crystallite_axe")
                         .unlockedBy(getHasName(ModItems.CRYSTALLITE_ORE), has(ModItems.CRYSTALLITE_ORE))
                         .save(output);
-                shaped(RecipeCategory.COMBAT, ModTools.CRYSTALLITE_AXE, 1)
-                        .pattern(" cc")
-                        .pattern(" sc")
-                        .pattern(" s ")
-                        .define('s', Items.STICK)
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRYSTALLITE_BLOCK, 1)
+                        .pattern("ccc")
+                        .pattern("ccc")
+                        .pattern("ccc")
                         .define('c', ModItems.CRYSTALLITE_ORE)
-                        .group("crystallite_axe")
+                        .group("crystallite_block")
                         .unlockedBy(getHasName(ModItems.CRYSTALLITE_ORE), has(ModItems.CRYSTALLITE_ORE))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, ModItems.CRYSTALLITE_ORE, 9)
+                        .requires(ModBlocks.CRYSTALLITE_BLOCK)
+                        .unlockedBy(getHasName(ModBlocks.CRYSTALLITE_BLOCK), has(ModBlocks.CRYSTALLITE_BLOCK))
                         .save(output);
                 HolderLookup.RegistryLookup<Item> itemLookup = registries.lookupOrThrow(Registries.ITEM);
             }

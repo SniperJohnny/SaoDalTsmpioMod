@@ -2,8 +2,7 @@ package net.sniperjohnny.saodaltsmpiomod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.sniperjohnny.saodaltsmpiomod.datagen.ModModelProvider;
-import net.sniperjohnny.saodaltsmpiomod.datagen.ModRecipeProvider;
+import net.sniperjohnny.saodaltsmpiomod.datagen.*;
 
 public class SaodaltsmpiomodDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -11,5 +10,10 @@ public class SaodaltsmpiomodDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModBlockLootTableProvider::new);
+
+
+
 	}
 }

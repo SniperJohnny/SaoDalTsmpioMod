@@ -1,8 +1,11 @@
 {
 
   "item.saodaltsmpiomod.crystallite_ore": "Crystallite Ore",
+  "item.saodaltsmpiomod.metall_scrap": "Metall Scrap",
+  "item.saodaltsmpiomod.metall": "Metall",
   "item.saodaltsmpiomod.rabbit_ragout": "Rabbit Ragout",
   "item.saodaltsmpiomod.dark_repulsor": "Dark Repulsor",
+  "item.saodaltsmpiomod.elucidator": "Elucidator",
   "item.saodaltsmpiomod.crystallite_pickaxe": "Crystallite Pickaxe",
   "item.saodaltsmpiomod.crystallite_axe": "Crystallite Axe",
   "item.saodaltsmpiomod.black_leather_helmet": "Black Leather Helmet",
@@ -11,13 +14,14 @@
   "item.saodaltsmpiomod.black_leather_boots": "Black Leather Boots",
 
 
-
+  "block.saodaltsmpiomod.crystallite_block": "Crystallite Block",
 
 
 
   "itemgroup.saodaltsmpio_food": "Mod Food",
-  "itemgroup.saodaltsmpio_tools": "Mod Food",
+  "itemgroup.saodaltsmpio_tools": "Mod Tools",
   "itemgroup.saodaltsmpio_weapons": "Mod Weapons",
-  "itemgroup.saodaltsmpio_ingredients": "Ingredients Mod"
+  "itemgroup.saodaltsmpio_ingredients": "Ingredients Mod",
+  "itemgroup.saodaltsmpio_blocks": "Blocks Mod"
 
 }
