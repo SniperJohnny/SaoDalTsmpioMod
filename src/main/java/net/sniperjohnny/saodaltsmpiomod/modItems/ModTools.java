@@ -31,10 +31,10 @@ public class ModTools {
             new Item.Properties().axe(ModMaterials.CRYSTALLIE_TOOL_MATERIAL, 10f, -2.8f));
     public static final Item CRYSTALLITE_SHOVEL = register("crystallite_shovel",
             Item::new,
-            new Item.Properties.shovel(ModMaterials.BLACK_METALL_TOOL_MATERIAL, 3f, -2.3f
+            new Item.Properties.shovel(ModMaterials.BLACK_METALL_TOOL_MATERIAL, 3f, -2.3f);
     public static final Item BLACK_METALL_AXE = register("black_metall_axe", 
             Item::new,
-            new Item.Properties().axe(ModMaterials.BLACK_METALL_TOOL_MATERIAL, 9f, -2.8f)
+            new Item.Properties().axe(ModMaterials.BLACK_METALL_TOOL_MATERIAL, 9f, -2.8f);
     public static void initialize() {
 
     }
