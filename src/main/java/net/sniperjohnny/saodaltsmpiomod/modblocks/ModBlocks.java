@@ -52,7 +52,12 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(5.5f, 35f).requiresCorrectToolForDrops(),
             true
     );
-
+    public static final Block METALL_BLOCK = register(
+            "metall_block",
+            Block::new,
+            blockBehaviour.Properties.of().sound(SoundType.STONE).strength(4.5f, 30f).requiresCorrectToolForDrops(),
+            true
+    );
 
 
 
