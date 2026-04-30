@@ -29,5 +29,14 @@ public class ModMaterials {
             255,
             REPAIRS_BLACK_METALL_ARMOR
     );
-
+   public static final TagKey<Item> REPAIRS_MOB_DROP_ARMOR = TagKey.create(BuiltInRegistries.ITEM.key(),
+            Identifier.fromNamespaceAndPath(Saodaltsmpiomod.MOD_ID, "repairs_mob_drop_armor"));
+   public static final ToolMaterial MOB_DROP_TOOL_MATERIAL = new ToolMaterial(
+            BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
+            800000000,
+            13.5f,
+            4f,
+            255,
+            REPAIRS_MOB_DROP_ARMOR
+    );
 }
