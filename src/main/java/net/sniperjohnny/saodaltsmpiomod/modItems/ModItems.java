@@ -43,6 +43,7 @@ public class ModItems {
     public static final Item REINFORCED_LEATHER_STICK = register("reinforced_leather_stick", Item::new, new Item.Properties());
     public static final Item METALL = register("metall", Item::new, new Item.Properties());
     public static final Item METALL_SCRAP = register("metall_scrap", Item::new, new Item.Properties());
+		 public static final Item BLACK_METAL_INGOT = register("black_metal_ingot", Item::new, new Item.Properties());
     public static void initialize() {
 
         }
